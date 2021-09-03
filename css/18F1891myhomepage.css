@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+/* 課題4-1
+------------------------------- */
+html { /* ブラウザのデフォルトのサイズ、または、ユーザが指定したサイズ */
+     font-size:100%;
+}
+
+body{ /* 沈んだ青色 */
+     color:#778899;
+}
+
+img { /* 画像の大きさを最適化 */
+    max-width:100%;
+}
+
+.logo{/* ロゴの横幅、うえ余白指定*/
+    width:210px;
+    margin-top:14px;
+}
+
+.main-nav{/* 横並び*/
+    display:flex;
+    list-style-type: none;
+}
+
+.main-nav li{/*　上余白、左余白指定　*/
+    margin-top:27px;
+    margin-left:36px;
+}
+
+.page-header{ /*ロゴとナビが横並び、左右両端に配置*/
+    display:flex;
+    justify-content:space-between;
+}
+
+.wrapper{/*最大値　1100px、中央に配置、左右の余白*/
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 4%;
+}
+
+.home-content{ /*画面中央、上部余白*/
+    text-align:center;
+    margin-top:10%;
+}
+
+.concept{/*文字のサイズ*/
+font-size:1.2em;
+color: #FFFFFF;
+}
+
+.page-title{/*フォントの設定、斜体*/
+    font-size:5em;
+    font-family:Georgia,serif;
+    font-style:oblique;
+    color: #1cafc9;
+}
+
+.button{/*ボタンの大きさ、色、角丸、余白*/
+    font-size:1.3em;
+    background:#999999;
+    color:#FFFFFF;
+    border-radius:5px;
+    padding:15px 28px;
+}
+
+a{/*下線なし*/
+   text-decoration:none;
+}
+
+.main-nav a{/*沈んだ青色*/
+   text-align: center;
+   color:#FFFFFF;
+   background-color: #7aa1c7;
+   display: block;
+   width: 80px;
+   padding: 3px 3px;
+   text-decoration: none;
+}
+
+.main-nav a:hover{/*位置づけたとき、品のある青緑*/
+   color:#48D1CC;
+   background-color:#113366;
+}
+
+.button:hover{/*位置づけたとき、品のある青緑*/
+   background:#48D1CC;
+}
+
+#home{/*背景画像の指定、表示領域いっぱい*/
+   background-image:url(../image/main-background.jpg);
+   min-height:100vh;
+}
+   
+.big-bg{/*上から画面いっぱいにする*/
+   background-size:cover;
+   background-position:center top;
+}
+
+#news{/*背景画像の指定、高さと余白の指定*/
+   background-image:url(../image/top-background.jpg);
+   height:270px;
+   margin-bottom:40px;
+}
+
+#news .page-title{/*中央揃え*/
+   text-align:center;
+}
+
+footer{/*背景色濃厚な橙、中央揃え、余白*/
+   background:#08e9f1b0;
+   text-align:center;
+   padding:10px 0;
+}
+
+footer p{/*文字は白*/
+   color:#000000;
+}
+
+article{/*記事部分*/
+   width:74%;
+}
+
+aside{/*サイドバー*/
+   width:22%;
+}
+
+.news-contents{/*横並び、余白*/
+   display:flex;
+   justify-content:space-between;
+   margin-bottom:50px;
+}
+
+.post-info{/*相対配置、余白*/
+   position:relative;
+   padding-top:4px;
+   margin-bottom:40px;
+}
+
+.post-date{/*背景：品のある青緑、50％角丸（円）、文字色：白、縦横幅、フォントサイズ、余白調整*/
+   background:#48D1CC;
+   border-radius: 50%;
+   color:#FFFFFF;
+   width: 100px;
+   height: 90px;
+   font-size:1.5em;
+   text-align:center;
+   position: absolute;
+   top: 0;
+   padding-top: 10px;
+}
+
+.post-title{/*font, fontsize*/
+   font-family:"MS 明朝",serif;
+   font-size:2em;
+}
+
+.post-title,
+.post-cat{/*両方とも左に120px空ける*/
+   margin-left:120px;
+}
+
+article img{/*画像の余白*/
+   margin-bottom: 20px;
+}
+
+article p{/*本文の余白*/
+   margin-bottom: 1rem;
+}
+
+.sub-title{
+    font-size: 1.4em;
+    padding:0 8px 8px;
+    border-bottom: 2px solid;
+}
+
+aside p{/* 本文の余白 */
+    padding: 12px 10px;
+}
+
+.sub-menu{/* 余白、行頭記号なし */
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.sub-menu li{/* 下線 */
+    border-bottom: 1px solid;
+}
+
+.sub-menu a{/* 沈んだ青色、余白、ブロック指定（クリックできるエリアが広くなる） */
+    color: #778899;
+    padding: 10px;
+    display: block;
+}
+
+.sub-menu a:hover{/* 位置付けたとき、品のある青緑 */
+    color: #48D1CC;
+}
+
+#menu{/*背景画像の指定*/
+   background-image:url(../image/menu-background.jpg) ;
+   height: 500px;
+}
+
+.menu-content{/*最大幅と余白*/
+    max-width: 560px;
+    margin-top: 10%;
+
+    /*
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #e4fcff;/*背景色*/
+    /*
+    border-top: solid 6px #1dc1d6;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+    
+}
+
+.menu-content.page-title{/*中央揃え白*/
+   text-align:center;
+}
+
+.menu-content p{/*文字サイズ、色、フォント、太字、余白*/
+   font-size: 1em;
+   color: #5a7474;
+   font-family: "MS UI Gothic",sans-serif;
+   font-weight: bold;
+   /*margin: 30px 0 0;*/
+   margin: 0; 
+   padding: 0;
+}
+
+.grid{/*タイル型、１列に３つの要素、余白*/
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+#contact{/*背景画像の指定*/
+    background-image: url(../image/contact-background.jpg);
+    height: 100vh;
+}
+
+form div{
+    margin-bottom: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{/*背景は透明色*/
+    background: rgba(255, 255, 255,.5);
+    border: 1px #FFFFFF solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6em;
+}
+
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 1.3em;
+    background: #999999;
+    color: #FFFFFF;
+    border-radius:5px ;
+    padding: 15px 28px;
+}
+.advertisement{
+    font-size: 1.4em;
+    padding:0 8px 8px;
+    border-bottom: 2px solid;
+    color: #778899;
+    padding: 10px;
+    display: block;
+    color: #48D1CC;
+}
+.darkbule{
+    color: darkblue;
+}
+a.cc:hover{/* 位置付けたとき、品のある青緑 */
+    color: #090cc7;
+}
+a:link {
+    text-decoration:none;
+    }
+    a:visited {
+    text-decoration:none;
+    
+    }
+    a:active {
+    text-decoration:none;
+    color:#0033cc;
+    }
+    a:hover {
+    text-decoration:underline;
+    }
+.photo{
+    text-align:center;
+}
