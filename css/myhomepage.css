@@ -51,7 +51,9 @@ color: #FFFFFF;
 }
 
 .page-title{/*フォントの設定、斜体*/
-   font-family: "Sawarabi Gothic"; 
+   font-size:5em;
+    font-family:Sawarabi Gothic;
+    color: #1cafc9;
 }
 
 .button{/*ボタンの大きさ、色、角丸、余白*/
