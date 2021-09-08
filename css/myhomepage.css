@@ -51,10 +51,7 @@ color: #FFFFFF;
 }
 
 .page-title{/*フォントの設定、斜体*/
-    font-size:5em;
-    font-family:Georgia,serif;
-    font-style:oblique;
-    color: #1cafc9;
+   font-family: "Sawarabi Gothic"; 
 }
 
 .button{/*ボタンの大きさ、色、角丸、余白*/
