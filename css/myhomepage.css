@@ -311,3 +311,10 @@ a:link {
 .photo{
     text-align:center;
 }
+.btn {/* 各散歩記事にある次の記事へのボタン情報 */
+  border-radius: 5px;
+  background-color: lightblue;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
